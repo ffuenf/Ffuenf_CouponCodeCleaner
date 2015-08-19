@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ffuenf_CouponCodeCleaner extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category   Ffuenf
+ *
+ * @author     Achim Rosenhagen <a.rosenhagen@ffuenf.de>
+ * @copyright  Copyright (c) 2015 ffuenf (http://www.ffuenf.de)
+ * @license    http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<config>
+    <modules>
+        <Ffuenf_CouponCodeCleaner>
+            <version>1.0.0</version>
+        </Ffuenf_CouponCodeCleaner>
+    </modules>
+    <global>
+        <helpers>
+            <ffuenf_couponcodecleaner>
+                <class>Ffuenf_CouponCodeCleaner_Helper</class>
+            </ffuenf_couponcodecleaner>
+        </helpers>
+        <models>
+            <ffuenf_couponcodecleaner>
+                <class>Ffuenf_CouponCodeCleaner_Model</class>
+            </ffuenf_couponcodecleaner>
+        </models>
+    </global>
+    <crontab>
+        <jobs>
+            <couponcodecleaner>
+                <schedule>
+                    <config_path>couponcodecleaner/general/scheduler_cron_expr</config_path>
+                </schedule>
+                <run>
+                    <model>ffuenf_couponcodecleaner/cleaner::clean</model>
+                </run>
+            </couponcodecleaner>
+        </jobs>
+    </crontab>
+    <default>
+        <couponcodecleaner>
+            <general>
+                <enable>1</enable>
+                <scheduler_cron_expr>30 4 * * *</scheduler_cron_expr>
+            </general>
+        </couponcodecleaner>
+    </default>
+    <phpunit>
+        <suite>
+            <modules>
+                <Ffuenf_CouponCodeCleaner/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>
