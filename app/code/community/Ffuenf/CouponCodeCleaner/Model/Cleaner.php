@@ -23,7 +23,7 @@ class Ffuenf_CouponCodeCleaner_Model_Cleaner
      * Clean expired sales rule entries.
      * This method will be called via a Magento crontab task.
      *
-     * @return null|array<String>
+     * @return null|String[]
      */
     public function clean()
     {
@@ -35,19 +35,18 @@ class Ffuenf_CouponCodeCleaner_Model_Cleaner
         
         $allCoupons = Mage::getModel('salesrule/rule')->getCollection()->load();
         $report['coupons']['count'] = count($allCoupons);
-        $Now = strtotime('now');
-        $today = date('Y-m-d', $Now);
-        
+        $now = strtotime('now');
+        $today = date('Y-m-d', $now);
         foreach ($allCoupons as $aCoupon) {
             $couponName = $aCoupon->getName();
             $expiryDate = $aCoupon->getToDate();
-            $expiryDay = date('Y-m-d', $expiryDate);
             if ($today > $expiryDate) {
                 $aCoupon->delete();
+                $report['coupons']['deleted']['codes'] .= $couponName.' / '
                 $report['coupons']['deleted']['count']++;
             }
         }
-        Mage::log('[COUPONCODECLEANER] Cleaning expired coupon codes (count: ' . $report['coupons']['count'] . ' | deleted: ' . $report['coupons']['deleted']['count'] . ')');
+        Mage::log('[COUPONCODECLEANER] Cleaning expired coupon codes (count: ' . $report['coupons']['count'] . ' | deleted: ' . $report['coupons']['deleted']['count'] . ' | codes: ' . $report['coupons']['deleted']['codes'] . ')');
         return $report;
     }
 }
