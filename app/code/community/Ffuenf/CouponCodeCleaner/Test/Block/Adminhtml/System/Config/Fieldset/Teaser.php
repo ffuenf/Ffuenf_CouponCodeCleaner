@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Ffuenf_CouponCodeCleaner extension.
  *
@@ -17,24 +16,19 @@
  * @license    http://opensource.org/licenses/mit-license.php MIT License
  */
 
-/**
- * @see Ffuenf_ProductAlertCleaner_Helper_Data
- *
- * @loadSharedFixture shared
- */
-class Ffuenf_CouponCodeCleaner_Test_Helper_Data extends EcomDev_PHPUnit_Test_Case
+class Ffuenf_CouponCodeCleaner_Test_Block_Adminhtml_System_Config_Fieldset_Teaser extends EcomDev_PHPUnit_Test_Case_Config
 {
+
     /**
-     * Tests is extension active.
+     * Check if the block aliases are returning the correct class names
      *
      * @test
-     * @covers Ffuenf_CouponCodeCleaner_Helper_Data::isExtensionActive
      */
-    public function testIsExtensionActive()
+    public function testBlockAliases()
     {
-        $this->assertTrue(
-            Mage::helper('ffuenf_couponcodecleaner')->isExtensionActive(),
-            'Extension is not active please check config'
+        $this->assertBlockAlias(
+            'ffuenf_couponcodecleaner/adminhtml_system_config_fieldset_teaser',
+            'Ffuenf_CouponCodeCleaner_Block_Adminhtml_System_Config_Fieldset_Teaser'
         );
     }
 }

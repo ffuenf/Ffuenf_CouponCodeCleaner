@@ -30,7 +30,7 @@
                             <config>
                                 <children>
                                     <couponcodecleaner translate="title" module="ffuenf_couponcodecleaner">
-                                        <title>CouponCodeCleaner Module</title>
+                                        <title>CouponCodeCleaner</title>
                                     </couponcodecleaner>
                                 </children>
                             </config>

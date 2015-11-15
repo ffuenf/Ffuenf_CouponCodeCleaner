@@ -1,7 +1,6 @@
-<?xml version="1.0"?>
-<!--
+<?php
 /**
- * Ffuenf_CouponCodeCleaner extension
+ * Ffuenf_Pagespeed extension.
  *
  * NOTICE OF LICENSE
  *
@@ -15,14 +14,21 @@
  * @author     Achim Rosenhagen <a.rosenhagen@ffuenf.de>
  * @copyright  Copyright (c) 2015 ffuenf (http://www.ffuenf.de)
  * @license    http://opensource.org/licenses/mit-license.php MIT License
-*/
--->
-<config>
-    <modules>
-        <Ffuenf_CouponCodeCleaner>
-            <active>true</active>
-            <codePool>community</codePool>
-            <depends>Ffuenf_Common</depends>
-        </Ffuenf_CouponCodeCleaner>
-    </modules>
-</config> 
+ */
+
+class Ffuenf_CouponCodeCleaner_Test_Model_Cleaner extends EcomDev_PHPUnit_Test_Case_Config
+{
+
+    /**
+     * Tests whether extension model aliases are returning the correct class names
+     *
+     * @test
+     */
+    public function testModelAlias()
+    {
+        $this->assertModelAlias(
+            'ffuenf_couponcodecleaner/cleaner',
+            'Ffuenf_CouponCodeCleaner_Model_Cleaner'
+        );
+    }
+}

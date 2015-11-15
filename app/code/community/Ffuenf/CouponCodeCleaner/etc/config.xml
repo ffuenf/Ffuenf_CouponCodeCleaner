@@ -20,7 +20,7 @@
 <config>
     <modules>
         <Ffuenf_CouponCodeCleaner>
-            <version>1.0.1</version>
+            <version>1.0.2</version>
         </Ffuenf_CouponCodeCleaner>
     </modules>
     <global>
@@ -29,6 +29,11 @@
                 <class>Ffuenf_CouponCodeCleaner_Helper</class>
             </ffuenf_couponcodecleaner>
         </helpers>
+        <blocks>
+            <ffuenf_couponcodecleaner>
+                <class>Ffuenf_CouponCodeCleaner_Block</class>
+            </ffuenf_couponcodecleaner>
+        </blocks>
         <models>
             <ffuenf_couponcodecleaner>
                 <class>Ffuenf_CouponCodeCleaner_Model</class>

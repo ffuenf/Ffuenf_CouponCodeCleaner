@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Ffuenf_CouponCodeCleaner extension.
  *
@@ -17,7 +16,7 @@
  * @license    http://opensource.org/licenses/mit-license.php MIT License
  */
 
-class Ffuenf_CouponCodeCleaner_Helper_Data extends Ffuenf_CouponCodeCleaner_Helper_Core
+class Ffuenf_CouponCodeCleaner_Helper_Data extends Ffuenf_Common_Helper_Core
 {
 
     /**
