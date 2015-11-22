@@ -1,0 +1,3 @@
+app/code/community/Ffuenf/CouponCodeCleaner
+app/etc/modules/Ffuenf_CouponCodeCleaner.xml
+shell/ffuenf_couponcodecleaner.php

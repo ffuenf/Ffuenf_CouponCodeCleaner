@@ -20,7 +20,7 @@
 <config>
     <modules>
         <Ffuenf_CouponCodeCleaner>
-            <version>1.0.2</version>
+            <version>1.0.3</version>
         </Ffuenf_CouponCodeCleaner>
     </modules>
     <global>
@@ -39,6 +39,13 @@
                 <class>Ffuenf_CouponCodeCleaner_Model</class>
             </ffuenf_couponcodecleaner>
         </models>
+        <resources>
+            <ffuenf_couponcodecleaner_setup>
+                <setup>
+                    <module>Ffuenf_CouponCodeCleaner</module>
+                </setup>
+            </ffuenf_couponcodecleaner_setup>
+        </resources>
     </global>
     <crontab>
         <jobs>
@@ -60,6 +67,9 @@
             </general>
         </couponcodecleaner>
     </default>
+    <uninstall>
+        <filename>uninstall.txt</filename>
+    </uninstall>
     <phpunit>
         <suite>
             <modules>
