@@ -18,7 +18,6 @@
 
 class Ffuenf_CouponCodeCleaner_Helper_Data extends Ffuenf_Common_Helper_Core
 {
-
     /**
      * config paths.
      */

@@ -35,7 +35,10 @@ class Ffuenf_CouponCodeCleaner_Test_Config_Setup extends EcomDev_PHPUnit_Test_Ca
      */
     public function testSetupExists() {
         $this->assertSchemeSetupScriptVersions(
-            '1.0.0', $this->expected('module')->getVersion(), null, 'ffuenf_couponcodecleaner_setup'
+            '1.0.0',
+            $this->expected('module')->getVersion(),
+            null,
+            'ffuenf_couponcodecleaner_setup'
         );
     }
 }

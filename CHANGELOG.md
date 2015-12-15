@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of Ffuenf_CouponCodeCleaner.
 
+## 1.1.0 (December 15, 2015)
+
+* fix dependency declaration to Ffuenf_Common
+* code-style
+
 ## 1.0.3 (November 22, 2015)
 
 * add uninstallation via [Ffuenf_MageTrashApp](https://github.com/ffuenf/Ffuenf_MageTrashApp)
