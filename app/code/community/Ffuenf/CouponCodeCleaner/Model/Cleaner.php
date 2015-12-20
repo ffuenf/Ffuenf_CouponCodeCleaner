@@ -41,7 +41,7 @@ class Ffuenf_CouponCodeCleaner_Model_Cleaner
             $expiryDate = $aCoupon->getToDate();
             if ($today > $expiryDate) {
                 $aCoupon->delete();
-                $report['coupons']['deleted']['codes'] .= $couponName.' / ';
+                $report['coupons']['deleted']['codes'] .= $couponName . ' / ';
                 $report['coupons']['deleted']['count']++;
             }
         }
