@@ -9,13 +9,6 @@ matrix:
   fast_finish: true
   allow_failures:
   - env: MAGENTO_VERSION=magento-ce-1.9.1.1
-  - env: MAGENTO_VERSION=magento-ce-1.9.1.0
-  - php: 5.4
-    env: MAGENTO_VERSION=magento-ce-1.9.2.2
-  - php: 5.4
-    env: MAGENTO_VERSION=magento-ce-1.9.2.1
-  - php: 5.4
-    env: MAGENTO_VERSION=magento-ce-1.9.2.0
   - php: 5.6
     env: MAGENTO_VERSION=magento-mirror-1.8.1.0
   - php: 7.0
@@ -26,7 +19,7 @@ env:
   - secure: aAo63Lm7hJ/ZF/xb0RYSg7YR7iiwvsKcsN8KhY5EJNYA4JQ2p5GOwzaLuAJHcoBXMD/0XqAMfJKG2x2qoqO6A636UvkkO1JWmxzBEfPrJWkcepiJIVuDCbhf1NChv8uPgZQrLR0m6m9S1KaG4us+XmxUGgNVlu/M9+W57y1IahqyGZZBSDEWp+MstpoBFuYj9eUhJRPOUTtoYLqaLjP00RoSkD4noAu3S3jtJHoxKnVuiNDJrTMEBqgj2XRPI0RMflM9Qk/Dh3u6gGguVsGygS6VkvXxEUSqVaf34aK/WgFCDlXAEUWSv+A+dCoTcbgk/0zkZW0GQZqzR4lJtnFWvpezj6n2TQ+sg5YJPuVM9oudCB0pvctqUUxUfJkjNmiRTe74R7QFg9Pu+7M2BS59abbcmF4dEzc5+jUnu3rpf3lUNfSks7OnCdKmCYefd8JqyeyFK7NZS+cg99lJwz5vvBIkB96gmDZ52smbkuVt6jCaOOSVL4BfkQhRm+FKmdxdCvfmZiKZ9yBQr6Ne/F5S7jtl5DHA9CiYy89h0LQgO1iuy/HxPyK0QVBXMhlltv4dzRiVKpbexrabp0GJzBqx0746ZTPCSu6lMkX0R0Iwej81S1SAt3ZYHui/PzhDJZPkRpOgtZqA+x3AOPxnYWcT2jqQKz9+Tk1FFfgfLI9GewU=
   - secure: d3Uc6B8yHsg+bYrhIN0Os+vTnkbp7S2bV3E9CwweQfUkN/Sl43gJfBjz9B+plM0GY2LV7CKVtN33dRXfGITdDpvIMaQX5v+aLncMxY3XSRWj9hkMV8N/yK4O63tstZxuc2nSLAZBlWPfmn8Ub9RLliR4HPEHVMM1T2JpXaS4RAPAfa+x5oc9EmGvFmUaUVgcyXK+ikKeRQB7/GTa8JadD1HORPeupT0MXDRbt1MCXXZH63U74RfXkVBStfoT0Ljr9mSqhEpxwzUwllOaI/gve/yjh9LO9M/sUcaB4aDMJFYjy84Ty43HVihcDUihCX+j1Ee10kAbRMSSuOI9mBeGwFmJlQ7QvbZypjze/82xZk3RY6VpcPqxAK5VTvyzVMX5+sfMb73BGyxMtyJilih6eZ9QUXW17vUT37wl+xRNtJwO3jNGqRtccpoP8BsVcf506/fVaitO+wUEjmKCaW650k90/Q5J8TZjFGLGPgEsifcgviTxulTX22osAJ/ajoPapyXKWrntk6UqbBTLi7UIhYM4a9r39PPDaBMEw4m7PNUi1eFxGPZvKThhTczZuRVMFK0MsSABBZqfwCqzDE7a4rmmKGwQLnAm33Z5qLHIIHLNIv3uN9wyrOhADAkubfAZJowOgSGgRrQH13WRI+B+GA9fFv+3p6oLys2FCHGErjw=
   matrix:
-  - MAGENTO_VERSION=magento-ce-1.9.2.2
+  - MAGENTO_VERSION=magento-ce-1.9.2.4
   - MAGENTO_VERSION=magento-ce-1.9.1.1
   - MAGENTO_VERSION=magento-mirror-1.8.1.0
   - MAGENTO_VERSION=magento-mirror-1.7.0.2
